@@ -11,6 +11,10 @@ body {
   width: 1000px;
 }
 
+header {
+  text-align: center;
+}
+
 section {
   width: 640px
 }
@@ -33,6 +37,7 @@ section {
   }
 
   header {
+    text-align: left;
     padding-right:320px;
   }
 
