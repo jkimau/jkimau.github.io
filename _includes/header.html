@@ -2,17 +2,14 @@
   <h1><a class="site-title" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
   <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
 
-  {% if site.github.is_project_page %}
-    <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
-  {% endif %}
+  <div class="contact">
+    <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+    <a href="{{ site.author.github }}" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    <a href="{{ site.author.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+  </div>
 
-  {% if site.github.is_user_page %}
-    <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-  {% endif %}
-
-  <ul>
+  <ul class="links">
     <li><a href="/archives"><strong>ARCHIVES</strong></a></li>
     <li><a href="/tags"><strong>TAGS</strong></a></li>
-    <li><a href="/gg"><strong>GitHub</strong></a></li>
   </ul>
 </header>

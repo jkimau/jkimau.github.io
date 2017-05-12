@@ -1,15 +1,14 @@
 title: Minimal theme
 description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+# show_downloads: true
 google_analytics:
 theme:
 
 include: ['_pages']
 
-github:
-  is_user_page: true
-  owner_url: 'https://github.com/jkimau'
-
-resume:
+author:
   name: 'JIM KIM'
   description: 'Frontend developer @Melbourne, AU'
+  email: jkim.au@gmail.com
+  github: 'https://github.com/jkimau'
+  linkedin: https://www.linkedin.com/in/jimkimau/
