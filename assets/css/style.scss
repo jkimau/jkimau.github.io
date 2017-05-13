@@ -78,6 +78,25 @@ body.resume {
   }
 }
 
+.section-wrapper {
+  .section-title {
+    margin: 0;
+  }
+
+  .section-description {
+    color: #aaa;
+  }
+
+  .section-details {
+    padding-left: 20px;
+
+    .stress {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+}
+
 
 @media print, screen and (max-width: 1080px) {
 
