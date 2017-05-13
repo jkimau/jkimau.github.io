@@ -51,26 +51,42 @@ header {
 
 section {
   width: 640px;
+}
 
-  .meta-box-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+body.resume {
+  header {
+    text-align: right;
+  }
 
-    a {
-      display: none;
+  .profile img {
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+  }
 
-      &.active {
-        display: block;
-      }
+  .contact a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #267CB9;
+
+    &:hover {
+      font-weight: normal;
     }
   }
 }
+
 
 @media print, screen and (max-width: 1080px) {
 
   body {
     font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  body.resume header {
+    padding-right: 0;
   }
 
   div.wrapper {
