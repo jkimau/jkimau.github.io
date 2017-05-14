@@ -1,8 +1,6 @@
-title: jkimau.github.io
-description: Minimal is a theme for GitHub Pages.
-# show_downloads: true
+title: 'dev.notes'
+description: 'dev.notes.filter(note => note.goodToShare)'
 google_analytics:
-theme:
 
 include: ['_pages']
 

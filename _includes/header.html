@@ -3,7 +3,7 @@
     <h1>{{ site.author.name }}</h1>
     <p>Frontend developer<br/>Melbourne, Australia</p>
   {% else %}
-    <h1><a class="site-title" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
+    <h1><a class="site-title" href="/">{% raw %}{{{% endraw %} {{ site.title }} {% raw %}}}{% endraw %}</a></h1>
     <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
   {% endif %}
 
