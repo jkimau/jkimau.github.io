@@ -1,15 +1,33 @@
 <header>
-  <h1><a class="site-title" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
-  <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
+  {% if page.permalink == 'resume' %}
+    <h1>{{ site.author.name }}</h1>
+    <p>Frontend developer<br/>Melbourne, Australia</p>
+  {% else %}
+    <h1><a class="site-title" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
+    <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
+  {% endif %}
 
-  <div class="contact">
-    <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-    <a href="{{ site.author.github }}" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-    <a href="{{ site.author.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+  <div class="links">
+    {% if page.permalink == 'resume' %}
+      <a href="mailto:{{ site.author.email }}">
+        {{ site.author.email }} <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+      <a href="{{ site.author.github }}" target="_blank">
+        Github <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="{{ site.author.linkedin }}" target="_blank">
+        LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+      <a href="/assets/files/">
+        Download Resume <i class="fa fa-download" aria-hidden="true"></i>
+      </a>
+    {% else %}
+      <a href="/archives">
+        ARCHIVES <i class="fa fa-archive" aria-hidden="true"></i>
+      </a>
+      <a href="/tags">
+        TAGS <i class="fa fa-tags" aria-hidden="true"></i>
+      </a>
+    {% endif %}
   </div>
-
-  <ul class="links">
-    <li><a href="/archives"><strong>ARCHIVES</strong></a></li>
-    <li><a href="/tags"><strong>TAGS</strong></a></li>
-  </ul>
 </header>

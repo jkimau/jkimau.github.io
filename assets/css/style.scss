@@ -12,50 +12,14 @@ body {
 }
 
 header {
+  text-align: right;
+
   .site-title {
     color: inherit;
   }
 
   .description {
     margin-bottom: 20px;
-  }
-
-  .contact {
-    background: none;
-    border: none;
-    padding-bottom: 20px;
-
-    a {
-      color: inherit;
-      padding: 0 5px;
-      width: auto;
-      border: none;
-
-      &:first-of-type {
-        padding-left: 0;
-      }
-    }
-  }
-
-  ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    a {
-      padding: 0;
-      height: auto;
-    }
-  }
-}
-
-section {
-  width: 640px;
-}
-
-body.resume {
-  header {
-    text-align: right;
   }
 
   .profile img {
@@ -65,10 +29,15 @@ body.resume {
     border-radius: 50%;
     border: 3px solid #ddd;
   }
+}
 
-  .contact a {
+.links {
+  background: none;
+  border: none;
+
+  a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 0;
     color: #267CB9;
 
@@ -76,6 +45,15 @@ body.resume {
       font-weight: normal;
     }
   }
+}
+
+section {
+  width: 640px;
+}
+
+
+footer {
+  text-align: right;
 }
 
 .section {
@@ -117,10 +95,6 @@ body.resume {
     font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
-  body.resume header {
-    padding-right: 0;
-  }
-
   div.wrapper {
     width:auto;
     margin:0;
@@ -133,8 +107,8 @@ body.resume {
   }
 
   header {
-    text-align: left;
-    padding-right:320px;
+    text-align: right;
+    padding-right: 0;
   }
 
   section {
@@ -166,10 +140,6 @@ body.resume {
     float:none;
     position:static;
     width:auto;
-  }
-
-  header {
-    padding-right:320px;
   }
 
   section {
