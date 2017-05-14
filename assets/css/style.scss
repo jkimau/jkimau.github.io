@@ -78,22 +78,35 @@ body.resume {
   }
 }
 
-.section-wrapper {
+.section {
   .section-title {
-    margin: 0;
-  }
-
-  .section-description {
-    color: #aaa;
+    text-decoration: underline;
+    border-bottom: 1px solid #aaa;
   }
 
   .section-details {
-    padding-left: 20px;
+    margin-bottom: 60px;
 
-    .stress {
-      font-weight: bold;
-      margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 0;
     }
+  }
+
+  .heading {
+    margin: 0;
+  }
+
+  .description {
+    color: #aaa;
+  }
+
+  .indent {
+    padding-left: 20px;
+  }
+
+  .stress {
+    font-weight: bold;
+    margin-bottom: 10px;
   }
 }
 
