@@ -2,23 +2,7 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 {{ content }}
-
-<div class="share-buttons">
-  <div class="fb-share-button"
-    data-href="{{site.url}}{{ post.url }}"
-    data-layout="button_count"
-    data-size="small">
-  </div>
-
-  <div class="twitter-button">
-    <a
-      href="https://twitter.com/share"
-      class="twitter-share-button"
-      data-show-count="false">
-    </a>
-  </div>
-</div>
