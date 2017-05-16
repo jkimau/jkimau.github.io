@@ -7,12 +7,12 @@ body {
   font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.wrapper {
-  width: 1000px;
+ol {
+  padding-left: 20px;
+}
 
-  .section {
-    margin-bottom: 60px;
-  }
+a:hover {
+  font-weight: normal;
 }
 
 header {
@@ -73,6 +73,14 @@ footer {
   }
 }
 
+.wrapper {
+  width: 1000px;
+
+  .section {
+    margin-bottom: 60px;
+  }
+}
+
 .section {
   .section-title {
     text-decoration: underline;
@@ -105,6 +113,19 @@ footer {
   }
 }
 
+.share-buttons {
+  margin: 40px 0 20px 0;
+  text-align: center;
+
+  > div {
+    display: inline-block;
+  }
+
+  .fb-share-button {
+    top: -6px;
+    margin-right: 10px;
+  }
+}
 
 @media print, screen and (max-width: 1080px) {
 
