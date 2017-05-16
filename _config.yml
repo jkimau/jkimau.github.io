@@ -10,3 +10,7 @@ author:
   email: jkim.au@gmail.com
   github: 'https://github.com/jkimau'
   linkedin: https://www.linkedin.com/in/jimkimau/
+
+gems: [jekyll-paginate]
+paginate: 1
+paginate_path: "page:num"
