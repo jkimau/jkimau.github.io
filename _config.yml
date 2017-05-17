@@ -1,5 +1,5 @@
 title: 'dev.notes'
-description: 'dev.notes.filter(note => note.goodToShare)'
+description: 'dev.notes.filter(note => note.toShare)'
 google_analytics:
 
 include: ['_pages']
