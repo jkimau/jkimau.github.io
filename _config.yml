@@ -4,6 +4,8 @@ google_analytics:
 
 include: ['_pages']
 
+permalink: /:categories/:year/:month/:day/:title
+
 author:
   name: 'JIM KIM'
   description: 'Frontend developer @Melbourne, AU'
