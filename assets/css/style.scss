@@ -131,6 +131,15 @@ footer {
   text-align: center;
 }
 
+.tag-heading {
+  margin-bottom: 10px;
+}
+
+.tag-posts-wrapper {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
 @media print, screen and (max-width: 1080px) {
 
   body {
