@@ -6,6 +6,32 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width">
+
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  {% if page.title %}
+    <meta property="og:type" content="article">
+  {% else %}
+    <meta property="og:type" content="website">
+  {% endif %}
+
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+    <meta property="og:title" content="{% raw %}{{{% endraw %} {{ site.title }} {% raw %}}}{% endraw %}" />
+  {% endif %}
+
+  {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+  {% else %}
+    <meta property="og:description" content="{{ site.description }}" />
+  {% endif %}
+
+  {% if page.image %}
+    <meta content="{{ page.image }}" property="og:image">
+  {% else %}
+    <meta content="/assets/images/logo.png" property="og:image">
+  {% endif %}
+
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
