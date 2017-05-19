@@ -1,6 +1,6 @@
 title: '{{ dev.notes }}'
 description: 'dev.notes.filter(note => note.toShare)'
-google_analytics:
+google_analytics: UA-68233507-1
 
 include: ['_pages']
 
@@ -10,7 +10,7 @@ author:
   name: 'JIM KIM'
   description: 'Frontend developer @Melbourne, AU'
   email: jkim.au@gmail.com
-  github: 'https://github.com/jkimau'
+  github: https://github.com/jkimau
   linkedin: https://www.linkedin.com/in/jimkimau/
 
 gems: [jekyll-paginate]
