@@ -1,4 +1,4 @@
-title: 'dev.notes'
+title: '{{ dev.notes }}'
 description: 'dev.notes.filter(note => note.toShare)'
 google_analytics:
 
