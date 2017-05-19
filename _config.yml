@@ -14,5 +14,5 @@ author:
   linkedin: https://www.linkedin.com/in/jimkimau/
 
 gems: [jekyll-paginate]
-paginate: 1
+paginate: 5
 paginate_path: "page:num"

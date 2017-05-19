@@ -10,6 +10,10 @@ body {
 h2 {
   display: inline-block;
   margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 ol {
@@ -52,22 +56,6 @@ header {
   }
 }
 
-.links {
-  background: none;
-  border: none;
-
-  a {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    color: #267CB9;
-
-    &:hover {
-      font-weight: normal;
-    }
-  }
-}
-
 section {
   width: 640px;
 }
@@ -86,6 +74,37 @@ footer {
 
     i {
       font-size: 18px;
+    }
+  }
+}
+
+.index-page {
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  h2 a:hover {
+    font-weight: inherit;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.links {
+  background: none;
+  border: none;
+
+  a {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #267CB9;
+
+    &:hover {
+      font-weight: normal;
     }
   }
 }
