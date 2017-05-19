@@ -24,7 +24,19 @@ header {
   text-align: right;
 
   .site-title {
-    color: inherit;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.1;
+    color: black;
+    margin-bottom: 20px;
+
+    a {
+      color: inherit;
+    }
+
+    a:hover {
+      font-weight: inherit;
+    }
   }
 
   .description {
