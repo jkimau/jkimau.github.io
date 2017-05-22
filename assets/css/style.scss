@@ -90,6 +90,14 @@ footer {
   ul {
     padding-left: 0;
     list-style: none;
+
+    li {
+      margin-bottom: 40px;
+
+      .meta {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
