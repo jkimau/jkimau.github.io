@@ -1,10 +1,16 @@
 title: '{{ dev.notes }}'
-description: 'dev.notes.filter(note => note.toShare)'
+description: 'dev.notes.filter(note => note.todyaILearnt)'
 google_analytics: UA-68233507-1
 
 include: ['_pages']
 
 permalink: /:categories/:year/:month/:day/:title
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 author:
   name: 'JIM KIM'
@@ -14,5 +20,6 @@ author:
   linkedin: https://www.linkedin.com/in/jimkimau/
 
 gems: [jekyll-paginate]
+group: :jekyll_plugins
 paginate: 5
 paginate_path: "page:num"
