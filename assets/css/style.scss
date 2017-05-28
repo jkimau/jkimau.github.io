@@ -24,6 +24,10 @@ a:hover {
   font-weight: normal;
 }
 
+p {
+  line-height: 1.6;
+}
+
 header {
   text-align: right;
 
@@ -182,6 +186,26 @@ footer {
 .tag-posts-wrapper {
   margin-bottom: 40px;
   overflow: hidden;
+}
+
+code.highlighter-rouge {
+  background-color: #f8f8f8;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+.language-javascript {
+  .highlight .err,
+  .highlight .sr {
+    color: black;
+    background-color: transparent;
+  }
+
+  .highlight .kr {
+    color: #009999;
+    background-color: transparent;
+  }
 }
 
 @media print, screen and (max-width: 1080px) {
