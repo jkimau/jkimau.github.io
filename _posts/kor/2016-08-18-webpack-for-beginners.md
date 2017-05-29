@@ -1,5 +1,6 @@
 ---
 layout: post
+category: kor
 title: "웹팩(Webpack) 시작하기"
 ---
 
