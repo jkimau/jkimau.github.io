@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<h1 class="archives-titles">ARCHIVES</h1>
+<ul class="archives-category">
+  {% if page.url == '/archives/' %}
+    <li><a href="/archives/" class="selected">All</a></li>
+  {% else %}
+    <li><a href="/archives/">All</a></li>
+  {% endif %}
+  &#x2022;
+  {% if page.url == '/archives/en' %}
+    <li><a href="/archives/en" class="selected">English</a></li>
+  {% else %}
+    <li><a href="/archives/en">English</a></li>
+  {% endif %}
+  &#x2022;
+  {% if page.url == '/archives/kor' %}
+    <li><a href="/archives/kor" class="selected">Korean</a></li>
+  {% else %}
+    <li><a href="/archives/kor">Korean</a></li>
+  {% endif %}
+</ul>
+
+{{ content }}

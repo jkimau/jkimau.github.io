@@ -188,6 +188,28 @@ footer {
   overflow: hidden;
 }
 
+.archives-titles {
+  display: inline-block;
+}
+
+.archives-category {
+  display: inline-block;
+  padding-left: 10px;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: inherit;
+    font-size: 14px;
+  }
+
+  a.selected {
+    color: #267CB9;
+  }
+}
+
 code.highlighter-rouge {
   background-color: #f8f8f8;
   padding: 2px 8px;
