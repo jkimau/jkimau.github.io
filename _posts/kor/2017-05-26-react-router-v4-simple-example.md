@@ -1,6 +1,6 @@
 ---
 layout: post
-category: en
+category: kor
 title: "리액트 라우터 v4 간단 예제"
 tags: ["리액트 라우터"]
 ---
