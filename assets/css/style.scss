@@ -3,341 +3,277 @@
 
 @import "jekyll-theme-minimal";
 
-body {
-  font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+body { font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif }
 
 h2 {
-  display: inline-block;
-  margin-top: 20px;
+    display: inline-block;
+    margin-top: 20px;
 
-  &:first-child {
-    margin-top: 0;
-  }
+    &:first-child { margin-top: 0 }
 }
 
-ol {
-  padding-left: 30px;
-}
+ol { padding-left: 30px }
 
-a:hover {
-  font-weight: normal;
-}
+a:hover { font-weight: normal }
 
-p {
-  line-height: 1.6;
-}
+p { line-height: 1.6 }
 
 header {
-  text-align: right;
+    text-align: right;
 
-  .site-title {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.1;
-    color: black;
-    margin-bottom: 20px;
+    .site-title {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.1;
+        color: black;
+        margin-bottom: 20px;
 
-    a {
-      color: inherit;
+        a { color: inherit }
+        a:hover { font-weight: inherit }
     }
 
-    a:hover {
-      font-weight: inherit;
+    .description { margin-bottom: 20px }
+
+    .profile img {
+        width: 140px;
+        height: 140px;
+        margin-top: 30px;
+        border-radius: 50%;
+        border: 3px solid #ddd;
     }
-  }
-
-  .description {
-    margin-bottom: 20px;
-  }
-
-  .profile img {
-    width: 140px;
-    height: 140px;
-    margin-top: 30px;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-  }
 }
 
-section {
-  width: 640px;
-}
+section { width: 640px }
 
 
 footer {
-  text-align: right;
+    text-align: right;
 
-  .links a {
-    display: inline-block;
-    margin-right: 5px;
+    .links a {
+        display: inline-block;
+        margin-right: 5px;
 
-    &:last-child {
-      margin-right: 0;
+        &:last-child { margin-right: 0 }
+        i { font-size: 18px }
     }
-
-    i {
-      font-size: 18px;
-    }
-  }
 }
 
 .index-page {
-  h2 {
-    margin-bottom: 5px;
-  }
+    h2 { margin-bottom: 5px }
+    h2 a:hover { font-weight: inherit }
 
-  h2 a:hover {
-    font-weight: inherit;
-  }
+    ul {
+        padding-left: 0;
+        list-style: none;
 
-  ul {
-    padding-left: 0;
-    list-style: none;
+        li {
+            margin-bottom: 40px;
 
-    li {
-      margin-bottom: 40px;
-
-      .meta {
-        margin-bottom: 10px;
-      }
+            .meta { margin-bottom: 10px }
+        }
     }
-  }
 }
 
 .links {
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 
-  a {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    color: #267CB9;
+    a {
+        display: block;
+        margin-bottom: 5px;
+        padding: 0;
+        color: #267CB9;
 
-    &:hover {
-      font-weight: normal;
+        &:hover { font-weight: normal }
     }
-  }
 }
 
 .wrapper {
   width: 1000px;
 
-  .section {
-    margin-bottom: 60px;
-  }
+  .section { margin-bottom: 60px }
 }
 
 .section {
-  .section-title {
-    text-decoration: underline;
-    border-bottom: 1px solid #aaa;
-  }
-
-  .section-details {
-    margin-bottom: 60px;
-
-    &:last-of-type {
-      margin-bottom: 0;
+    .section-title {
+        text-decoration: underline;
+        border-bottom: 1px solid #aaa;
     }
-  }
 
-  .heading {
-    margin: 0;
-  }
+    .section-details {
+        margin-bottom: 60px;
 
-  .description {
-    color: #aaa;
-  }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 
-  .indent {
-    padding-left: 20px;
-  }
+    .stress {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-  .stress {
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-decoration: underline;
-  }
+    .heading { margin: 0 }
+    .description { color: #aaa }
+    .indent { padding-left: 20px }
+    .underline { text-decoration: underline }
 }
 
 .share-buttons {
-  margin: 40px 0 20px 0;
-  text-align: center;
+    margin: 40px 0 20px 0;
+    text-align: center;
 
-  > div {
-    display: inline-block;
-  }
+    > div { display: inline-block }
 
-  .fb-share-button {
-    top: -6px;
-    margin-right: 10px;
-  }
+    .fb-share-button {
+        top: -6px;
+        margin-right: 10px;
+    }
 }
 
-.pagination {
-  text-align: center;
-}
+.pagination { text-align: center }
 
-.tag-heading {
-  margin-bottom: 10px;
-}
+.tag-heading { margin-bottom: 10px }
 
 .tag-posts-wrapper {
-  margin-bottom: 40px;
-  overflow: hidden;
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
-.archives-titles {
-  display: inline-block;
-}
+.archives-titles { display: inline-block }
 
 .archives-category {
-  display: inline-block;
-  padding-left: 10px;
-
-  li {
     display: inline-block;
-  }
+    padding-left: 10px;
 
-  a {
-    color: inherit;
-    font-size: 14px;
-  }
+    li { display: inline-block }
 
-  a.selected {
-    color: #267CB9;
-  }
+    a {
+        color: inherit;
+        font-size: 14px;
+    }
+
+    a.selected { color: #267CB9 }
 }
 
 code.highlighter-rouge {
-  background-color: #f8f8f8;
-  padding: 2px 8px;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
+    background-color: #f8f8f8;
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
 }
 
 .language-javascript {
-  .highlight .err,
-  .highlight .sr {
-    color: black;
-    background-color: transparent;
-  }
+    .highlight .err,
+    .highlight .sr {
+        color: black;
+        background-color: transparent;
+    }
 
-  .highlight .kr {
-    color: #009999;
-    background-color: transparent;
-  }
+    .highlight .kr {
+        color: #009999;
+        background-color: transparent;
+    }
 }
 
 @media print, screen and (max-width: 1080px) {
+    body { font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif }
 
-  body {
-    font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+    div.wrapper {
+        width:auto;
+        margin:0;
+    }
 
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
+    header,
+    section,
+    footer {
+        float:none;
+        position:static;
+        width:auto;
+    }
 
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
+    header {
+        text-align: right;
+        padding-right: 0;
+    }
 
-  header {
-    text-align: right;
-    padding-right: 0;
-  }
+    section {
+        border:1px solid #e5e5e5;
+        border-width:1px 0;
+        padding:20px 0;
+        margin:0 0 20px;
+    }
 
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
+    header a small { display:inline }
 
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
+    header ul {
+        position:absolute;
+        right:50px;
+        top:52px;
+    }
 }
 
 @media print, screen and (max-width: 960px) {
+    div.wrapper {
+        width:auto;
+        margin:0;
+    }
 
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
+    header,
+    section,
+    footer {
+        float:none;
+        position:static;
+        width:auto;
+    }
 
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
+    section {
+        border:1px solid #e5e5e5;
+        border-width:1px 0;
+        padding:20px 0;
+        margin:0 0 20px;
+    }
 
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
+    header a small { display:inline }
 
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
+    header ul {
+        position:absolute;
+        right:50px;
+        top:52px;
+    }
 }
 
 @media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
+    body { word-wrap:break-word }
 
-  header {
-    padding:0;
-  }
+    header { padding:0 }
 
-  header ul, header p.view {
-    position:static;
-  }
+    header ul,
+    header p.view {
+        position:static;
+    }
 
-  pre, code {
-    word-wrap:normal;
-  }
+    pre,
+    code {
+        word-wrap:normal;
+    }
 }
 
 @media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
+    body { padding:15px }
 
-  header ul {
-    width:99%;
-  }
+    header ul { width:99% }
 
-  header li, header ul li + li + li {
-    width:33%;
-  }
+    header li,
+    header ul li + li + li {
+        width:33%;
+    }
 }
 
 @media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
-  }
+    body {
+        padding:0.4in;
+        font-size:12pt;
+        color:#444;
+    }
 }
